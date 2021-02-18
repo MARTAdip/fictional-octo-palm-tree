@@ -5,6 +5,8 @@ import 'normalize.css';
 import Nav from './Nav';
 import GlobalStyles from '../styles/GlobalStyles';
 import stripes from '../assets/images/stripes.svg';
+import Footer from './Footer';
+import Typography from '../styles/Typography';
 
 const SiteBorderStyles = styled.div`
   max-width: 1000px;
@@ -31,11 +33,13 @@ export default function Layout({ children }) {
   return (
     <>
       <GlobalStyles />
+      <Typography />
       <SiteBorderStyles />
       <ContentStyles>
         <Nav />
         {children}
       </ContentStyles>
+      <Footer />
     </>
   );
 }

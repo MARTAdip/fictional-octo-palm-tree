@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import stripes from '../assets/images/stripes.svg';
+import bground from '../assets/images/bground.svg';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -10,10 +11,11 @@ const GlobalStyles = createGlobalStyle`
     --grey: #efefef;
   }
   html {
-    background-image: purple;
+    background-image: url(${bground});
     background-size: 450px;
     background-attachment: fixed;
     font-size: 10px;
+    background-repeat: repeat-y;
   }
 
   body {
@@ -41,9 +43,9 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .gatsby-image-wrapper img[src*=base64\\,] {
+  .gatsby-image-wrapper img[src*=base64\\,] {  
     image-rendering: -moz-crisp-edges;
-    image-rendering: pixelated;
+    image-rendering: pixelated; 
   }
 
   /* Scrollbar Styles */

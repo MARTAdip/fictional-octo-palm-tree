@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 export default function Nav() {
   return (
-    <div>
+    <>
       <ul>
         <li>
           <Link to="/">Hot Now</Link>
@@ -13,11 +13,9 @@ export default function Nav() {
         <li>
           <Link to="/plants/">Plants</Link>
         </li>
-        {/* <li>
-          <Link to="/">
-            <Logo />
-          </Link>
-        </li> */}
+        <li>
+          <Link to="/">LOGOO</Link>
+        </li>
         <li>
           <Link to="/florists">Florists</Link>
         </li>
@@ -25,6 +23,6 @@ export default function Nav() {
           <Link to="/order">Order Ahead!</Link>
         </li>
       </ul>
-    </div>
+    </>
   );
 }
